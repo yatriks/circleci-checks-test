@@ -5,4 +5,5 @@ jobs:
       - image: circleci/python
     steps:
       - checkout
+      - run: echo "Now, checks are enabled"
       - run: curl https://api.github.com/repos/yatriks/circleci-checks-test/commits/$CIRCLE_SHA1/status
