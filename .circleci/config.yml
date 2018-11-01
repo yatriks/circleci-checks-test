@@ -5,4 +5,4 @@ jobs:
       - image: circleci/python
     steps:
       - checkout
-      - run: curl https://api.github.com/repos/yatriks/circleci-checks-test/commits/$CIRCLE_SHA1/status -H "Authorization token $GITHUB_TOKEN"
+      - run: curl https://api.github.com/repos/yatriks/circleci-checks-test/commits/$CIRCLE_SHA1/status
